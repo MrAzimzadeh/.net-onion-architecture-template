@@ -7,7 +7,7 @@
     <authors>Mahammad Azimzada</authors>
     <owners>MyApp Author</owners>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/MrAzimzadeh/MyApp</projectUrl>
+    <projectUrl>https://github.com/MrAzimzadeh/.net-onion-architecture-template</projectUrl>
     <description>A complete Onion Architecture template for building scalable, maintainable .NET 9.0
       applications with clean architecture principles</description>
     <releaseNotes>Initial release of Onion Architecture template</releaseNotes>
