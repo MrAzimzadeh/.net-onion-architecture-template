@@ -343,7 +343,7 @@ The application automatically creates the database and runs migrations on startu
 
 ```bash
 cd src/Presentation/MyApp.WebAPI
-dotnet ef database update
+dotnet run
 ```
 
 #### 6. Run the Application
