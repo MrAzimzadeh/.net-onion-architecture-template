@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MyApp.Solution</id>
+    <version>1.0.0</version>
+    <title>Onion Architecture Template</title>
+    <authors>Mahammad Azimzada</authors>
+    <owners>MyApp Author</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/MrAzimzadeh/MyApp</projectUrl>
+    <description>A complete Onion Architecture template for building scalable, maintainable .NET 9.0
+      applications with clean architecture principles</description>
+    <releaseNotes>Initial release of Onion Architecture template</releaseNotes>
+    <tags>onion-architecture clean-architecture template dotnet csharp api</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="**/*" target="content"
+      exclude="**\.git\**;**\.vs\**;**/bin\**;**/obj\**;**\.gitignore;**\*.user;**\.DS_Store;**/node_modules\**;**dist\**;.nuget\**;build_output.txt;msbuild.log" />
+  </files>
+</package>

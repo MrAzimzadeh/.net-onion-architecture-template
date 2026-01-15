@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "MrAzimzadeh",
+  "classifications": [
+    "Web",
+    "Onion Architecture",
+    "Clean Architecture",
+    "API",
+    ".NET",
+    "Solution"
+  ],
+  "name": "Onion Architecture Template",
+  "identity": "MyApp.Solution",
+  "shortName": "onion",
+  "description": "A complete Onion Architecture template for building scalable, maintainable .NET 9.0 applications with clean architecture principles",
+  "version": "1.0.0",
+  "templateEngine": "dotnetcli",
+  "baselines": {
+    "app": {
+      "description": "A target baseline for .NET 9.0",
+      "defaultName": "app"
+    }
+  },
+  "defaultName": "MyApp",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "postActions": [
+    {
+      "description": "Restore NuGet packages",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore' to restore NuGet packages"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4F2A253B33D0",
+      "args": {
+        "files": "0"
+      },
+      "continueOnError": true
+    }
+  ],
+  "symbols": {
+    "ProjectName": {
+      "type": "parameter",
+      "description": "The name of the project (will replace all 'MyApp' occurrences)",
+      "datatype": "text",
+      "defaultValue": "MyProject",
+      "replaces": "MyApp",
+      "fileRename": "MyApp",
+      "isRequired": true
+    },
+    "Company": {
+      "type": "parameter",
+      "description": "Your company/organization name (will replace 'Company.Project')",
+      "datatype": "text",
+      "defaultValue": "Company",
+      "replaces": "Company",
+      "isRequired": false
+    }
+  }
+}
