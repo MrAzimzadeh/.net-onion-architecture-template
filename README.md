@@ -303,8 +303,8 @@ Before you begin, ensure you have the following installed:
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/MrAzimzadeh/OnionArch-Template.git
-cd OnionArch-Template
+git clone https://github.com/MrAzimzadeh/.net-onion-architecture-template
+cd MyApp
 ```
 
 #### 2. Start External Services (Docker)
@@ -1072,8 +1072,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 For questions, issues, or feature requests:
 
-- **GitHub Issues**: [Create an issue](https://github.com/MrAzimzadeh/OnionArch-Template/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/MrAzimzadeh/OnionArch-Template/discussions)
+- **GitHub Issues**: [Create an issue](https://github.com/MrAzimzadeh/.net-onion-architecture-template/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/MrAzimzadeh/.net-onion-architecture-template/discussions)
 
 ---
 
@@ -1091,5 +1091,5 @@ If you find this template useful, please consider giving it a ⭐ on GitHub!
 
 ---
 
-**Built with ❤️ by [MrAzimzadeh](https://github.com/MrAzimzadeh)**# .Net-Onion-Example-Template
+**Built with ❤️ by [MrAzimzadeh](https://github.com/MrAzimzadeh)**# .net-onion-architecture-template
 # .net-onion-architecture-template
