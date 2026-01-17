@@ -43,6 +43,9 @@ builder.Services.AddLocalizationConfig();
 // Add Global Exception Handling
 builder.Services.AddExceptionConfig();
 
+// Add Health Checks
+builder.Services.AddCustomHealthChecks(builder.Configuration);
+
 // Add Storage (Choose your provider: Local, Azure, MinIO)
 builder.Services.AddStorage(MyApp.Application.Common.Enums.StorageType.Local);
 
@@ -70,6 +73,9 @@ app.UseAuthorization();
 
 // Use Localization
 app.UseLocalizationConfig();
+
+// Use Health Checks
+app.UseCustomHealthChecks();
 
 app.MapControllers();
 app.MapHub<UserHub>("/hubs/user");

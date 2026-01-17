@@ -1,4 +1,4 @@
-namespace MyApp.Application.Common.DTOs;
+ namespace MyApp.Application.Common.DTOs;
 
 /// <summary>
 /// DTO for changing password
