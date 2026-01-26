@@ -19,4 +19,24 @@ public class MailController(IMediator mediator) : BaseController
         var result = await mediator.Send(request);
         return StatusCode((int)result.HttpStatusCode, result);
     }
+
+
+    [HttpPost("DataSeeder")]
+    public async Task<IActionResult> DataSeeder()
+    {
+
+       string[] email =  [""];
+
+        for (int i = 0; i < email.Length; i++)
+        {   
+            var request = new SendMailCommand
+            {
+                ToAddresses = new List<string> { email[i] },
+                Subject = "Test Mail",
+                Body = "This is a test mail",
+            };
+            var result = await mediator.Send(request);
+        }
+        return StatusCode(200, "DataSeeder is done");
+    }
 }

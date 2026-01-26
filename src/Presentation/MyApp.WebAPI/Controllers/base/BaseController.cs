@@ -5,7 +5,7 @@ namespace MyApp.WebAPI.Controllers;
 
 [Route("api/v1/[controller]")]
 [ApiController]
-[Authorize]
+// [Authorize]
 public abstract class BaseController : Controller
 {
 }

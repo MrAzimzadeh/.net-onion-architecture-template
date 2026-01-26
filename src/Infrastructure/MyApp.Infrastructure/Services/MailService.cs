@@ -77,13 +77,16 @@ public class MailService : IMailService
 
         email.Body = builder.ToMessageBody();
 
-        using var smtp = new SmtpClient();
+        using var smtp = new SmtpClient(){
+            
+        };
+        
         // Use Auto to automatically negotiate the appropriate SSL/TLS protocol
         await smtp.ConnectAsync(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.Auto);
         
         if (!string.IsNullOrEmpty(_mailSettings.Password))
         {
-             await smtp.AuthenticateAsync(_mailSettings.Mail, _mailSettings.Password);
+             await smtp.AuthenticateAsync(_mailSettings.UserName, _mailSettings.Password);
         }
        
         await smtp.SendAsync(email);
